@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Assemble and Run",
+        "type": "shell",
+        "command": "nasm",        // Replace with your assembler (e.g., nasm, gas, etc.)
+        "args": ["-f", "elf", "your_assembly_file.asm"], // Replace with your assembly file
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always"
+        },
+        "problemMatcher": "$nasm"
+      }
+    ]
+  }
+  
